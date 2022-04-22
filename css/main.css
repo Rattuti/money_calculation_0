@@ -19,12 +19,11 @@ div,li {
 }
 
 .back{
- background: url("../images/sample_menu_bg.jpg");
+ background: url("../images/sample_menu_bg.jpg") no-repeat bottom;
  background-attachment: fixed, scroll;
  background-repeat: no-repeat;
- background-position: 50% -50%;
- background-size: cover;
 }
+
 .header_nav {
   background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
   display: flex;
@@ -71,6 +70,7 @@ div,li {
   flex-direction: column;
   justify-content: center;
 }
+
 .key h1{
   font-size: 2.5rem;
 }
@@ -104,27 +104,33 @@ div,li {
   text-align: center;
 }
 
-.caffee_menu_image {
-  width: 200px;
-  border-radius: 50%;
+.column49_2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .column49_2 li{
-  display: inline-block;
+  display: flex;
+  flex-direction: row-reverse;
   width: 49%;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 
 .column49_2_menu_content{
   padding: 10px;
-  display: inline-block;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
 }
 
 .column49_2_menu_price{
   color: #42210b;
   font-size: 18px;
-  text-align: right;}
+  text-align: right;
+}
 
 .column49_2 img{
   width: 55%;
@@ -133,23 +139,88 @@ div,li {
   object-fit: cover;
 }
 
-.column49_3{
+.coffee_menu{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+
+.menu_list{
+  background: #fff;
   padding: 20px;
 }
 
-.column49_3 li{
-  display: flex;
-  width: 49%;
-}
-
-.column49_3 img{
+.coffee_menu_image{
+  border-radius: 50%;
   display: flex;
   width: 20%;
   position: left;
+  object-fit: cover;
 }
 
-.column49_3 h2 p{
+.coffee_menu_list_item{
+  width: 49%;
   display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+}
+
+.coffee_menu_content{
   width: 80%;
-  position: right;
+  padding: 10px;
+}
+
+.menu_item_title{
+  font-size: 18px;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.coffee_menu_price{
+  color: black;
+  font-size: 18px;
+  text-align: left;
+}
+
+dt{
+  float: left;
+}
+
+dd{
+  margin-left:80px;
+}
+
+.footer {
+  width: 100%;
+  background: #251e19;
+  position: absolute;
+  bottom: -75px;
+  padding-bottom: 10px;
+  height: 75px;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer_nav_item{
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer_logo{
+  width: 80px;
+}
+
+.global_nav_footer_item {
+  color: white;
+  text-align: center;
+  font-size: 10px;
 }
