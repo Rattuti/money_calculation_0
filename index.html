@@ -28,11 +28,11 @@
         <!-- グローバルナビゲーション　-->
       </nav>
     <!-- 以下を変更 -->
-    <div class="key section_inner"> 
+    <div class="key section_inner">
       <h1>DIC Coffee</h1>
       <p>natural organic cafe</p>
     </div>
-  </header> 
+  </header>
   <section>
      <article class="section_inner">
        <div class="section_title">
@@ -110,7 +110,38 @@
           </li>
         </ul>
       </section>
+
+      <ul>
+        <h2>送料のご案内</h2>
+        <li>合計金額が2000円未満で送料500円</li>
+        <li>2000円以上で250円</li>
+        <li>3000円以上で無料</li>
+      </ul>
+
       </article>
+
+      <section class="section_inner">
+        <form>
+          <h1>ご注文</h1>
+          <p>商品を選択してください</p>
+          <div>
+            <select id="product" required>
+              <option hidden value="0">選択してください</option>
+              <option value="1">オリジナルブレンド200g 500円</option>
+              <option value="2">オリジナルブレンド500g 900円</option>
+              <option value="3">スペシャルブレンド200g 700円</option>
+              <option value="4">スペシャルブレンド500g 1200円</option>
+            </select>
+            <p>数量を選択してください</p>
+            <input type="number" min="1" max="5" id="number" required>
+          </div>
+          <br>
+          <input type="button" class="btn" value="追加" onclick="add()">
+          <input type="button" class="btn" value="合計金額" onclick="calc()">
+        </form>
+        <script async src="javascript/sample.js"></script>
+        </section>
+
       <article class="section_inner">
         <h1>ACCESS</h1>
         <p>店舗情報</p>
@@ -133,10 +164,10 @@
           <a href="index.html" class="footer_nav_item">
             <li>Home</li>
           </a>
-          <a href="#menu"          class="footer_nav_item">
+          <a href="#menu" class="footer_nav_item">
             <li>Menu</li>
           </a>
-          <a href="contact.html"          class="footer_nav_item">
+          <a href="contact.html" class="footer_nav_item">
             <li>Contact</li>
           </a>
           <a href="index.html">
